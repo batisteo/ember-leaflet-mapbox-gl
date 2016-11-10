@@ -1,6 +1,6 @@
 {
   "name": "ember-leaflet-mapbox-gl",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "The default blueprint for ember-cli addons.",
   "directories": {
     "doc": "doc",
@@ -37,16 +37,28 @@
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
-    "ember-welcome-page": "^1.0.3",
+    "ember-leaflet": "^3.0.3",
     "loader.js": "^4.0.10"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "ember-leaflet",
+    "ember",
+    "mapbox",
+    "mapbox-gl",
+    "vector-tiles",
+    "leaflet"
   ],
   "dependencies": {
-    "ember-cli-babel": "^5.1.7"
+    "ember-cli-babel": "^5.1.7",
+    "ember-cli-node-assets": "^0.1.4",
+    "mapbox-gl": "^0.25.1",
+    "mapbox-gl-leaflet": "0.0.1"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "after": [
+      "ember-leaflet"
+]
   }
 }

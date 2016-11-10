@@ -1,0 +1,1 @@
+export { default } from 'ember-leaflet-mapbox-gl/components/mapbox-gl-layer';

@@ -1,0 +1,7 @@
+<h2 id="title">Welcome to Ember</h2>
+
+{{#leaflet-map lat=lat lng=lng zoom=zoom}}
+  {{mapbox-gl-layer 
+    style='https://raw.githubusercontent.com/osm2vectortiles/mapbox-gl-styles/master/styles/bright-v9-cdn.json'
+    token='no-token'}}
+{{/leaflet-map}}
